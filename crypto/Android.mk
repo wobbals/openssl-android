@@ -495,7 +495,7 @@ else
 	LOCAL_SRC_FILES += $(non_arm_src_files)
 endif
 ifeq ($(TARGET_SIMULATOR),true)
-	# Make valgrind happy.
+# Make valgrind happy.
 	LOCAL_CFLAGS += -DPURIFY
     LOCAL_LDLIBS += -ldl
 endif
@@ -516,7 +516,6 @@ ifeq ($(WITH_HOST_DALVIK),true)
     LOCAL_MODULE_TAGS := optional
     LOCAL_MODULE:= libcrypto
     include $(BUILD_SHARED_LIBRARY)
-    include $(BUILD_STATIC_LIBRARY)
 endif
 
 ########################################
