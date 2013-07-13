@@ -516,6 +516,7 @@ ifeq ($(WITH_HOST_DALVIK),true)
     LOCAL_MODULE_TAGS := optional
     LOCAL_MODULE:= libcrypto
     include $(BUILD_SHARED_LIBRARY)
+    include $(BUILD_STATIC_LIBRARY)
 endif
 
 ########################################
