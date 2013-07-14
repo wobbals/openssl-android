@@ -1,6 +1,6 @@
 #!/bin/sh -x
 
-ndk-build -j8
+ndk-build
 find obj -name objs | xargs rm -rf
 OUT=usr
 mv obj $OUT
